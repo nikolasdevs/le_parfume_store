@@ -14,7 +14,27 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    colors: {
+      peach: {
+        100: "#F9E9E6",
+      },
+      neutral: {
+        100: "#fff",
+        200: "#4F4D63",
+        300: "#877B7A",
+      },
+      danger: {
+        100: "#CF3D29",
+        200: "#D2481D",
+      },
+    },
+    fontFamily: {
+      display: "Cormorant Garamond",
+      body: "Montserrat",
+      // altText: "Allura",
+    },
   },
+
   plugins: [],
 };
 export default config;
