@@ -22,12 +22,12 @@ const Cart = () => {
               <Image src={image6} alt="" className=" w-[340px] h-[520px]" />
             </div>
           </div>
-          <div className="w-full lg:w-1/2 px-8">
+          <div className="w-full lg:w-1/2 px-8 mt-4">
             <div className="top flex flex-col">
               <p className=" text-[1.875rem] font-display hidden lg:flex">
                 Your cart top pick
               </p>
-              <h2 className=" text-[3.125rem] font-display text-neutral-200 ">
+              <h2 className=" text-3xl md:text-[3.125rem] font-display text-neutral-200 ">
                 LANCOME LIBR
               </h2>
               <p>Eua de parfume</p>
@@ -83,13 +83,13 @@ const Cart = () => {
               <Image src={image11} alt="" className=" w-[340px] h-[520px]" />
             </div>
           </div>
-          <div className="w-full md:w-1/2 px-8">
+          <div className="w-full md:w-1/2 px-8 mt-4">
             <div className="top flex flex-col">
               <p className=" text-[1.875rem] font-display hidden lg:flex">
                 Your cart top pick
               </p>
-              <h2 className=" text-[3.125rem] font-display text-neutral-200 ">
-                LANCOME LIBR
+              <h2 className="text-3xl md:text-[3.125rem] font-display text-neutral-200 ">
+                COCO CHANEL
               </h2>
               <p>Eua de parfume</p>
             </div>
