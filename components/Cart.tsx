@@ -7,6 +7,7 @@ import rec1 from "../public/rec1.svg";
 import rec2 from "../public/rec2.svg";
 import rec3 from "../public/rec3.svg";
 import rec4 from "../public/rec4.svg";
+import Link from "next/link";
 
 const Cart = () => {
   return (
@@ -20,7 +21,7 @@ const Cart = () => {
             <div className=" bg-neutral-200 absolute -right-32 top-20">
               <Image src={image6} alt="" className=" w-[340px] h-[520px]" />
             </div>
-          </div> 
+          </div>
           <div className="w-full lg:w-1/2 px-8">
             <div className="top flex flex-col">
               <p className=" text-[1.875rem] font-display hidden lg:flex">
@@ -67,11 +68,11 @@ const Cart = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full flex justify-end ">
+            <Link href={"/checkout"} className="w-full flex justify-end ">
               <button className="py-4 px-8 bg-danger-200 text-neutral-100 mt-8 md:mt-16 flex items-start  font-display">
                 Order Now
               </button>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -128,11 +129,11 @@ const Cart = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full flex justify-end ">
+            <Link href={"/checkout"} className="w-full flex justify-end ">
               <button className="py-4 px-8 bg-danger-200 text-neutral-100 mt-8 md:mt-16 flex items-start font-display">
                 Order Now
               </button>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

@@ -38,11 +38,11 @@ const Navbar = () => {
               />
             </div>
           </div>
-
-          <div className="flex flex-shrink-0 items-center">
-            <Image src={logo} alt="company Logo" />
-          </div>
-
+          <Link href={"/"}>
+            <div className="flex flex-shrink-0 items-center">
+              <Image src={logo} alt="company Logo" />
+            </div>
+          </Link>
           <div className="">
             <div className="flex items-center gap-16">
               <Image alt="Your Company" src={search} className="h-8 w-auto" />
