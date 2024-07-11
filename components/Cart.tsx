@@ -128,7 +128,7 @@ const Cart = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full flex justify-end bg-neutral-200">
+            <div className="w-full flex justify-end ">
               <button className="py-4 px-8 bg-danger-200 text-neutral-100 mt-8 md:mt-16 flex items-start font-display">
                 Order Now
               </button>
