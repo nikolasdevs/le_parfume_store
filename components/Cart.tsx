@@ -13,7 +13,7 @@ const Cart = () => {
   return (
     <div className=" flex flex-col gap-4">
       <div className="container m-auto bg-neutral-100 w-full text-neutral-300 ">
-        <h1 className="text-[3.125rem] text-start py-8 font-display text-neutral-200">
+        <h1 className="text-[3.125rem] text-start py-8 px-8 font-display text-neutral-200">
           Cart
         </h1>
         <div className="w-full bg-neutral-100 h-auto my-16 flex  lg:flex-row flex-col justify-between">
