@@ -1,35 +1,39 @@
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 import React from "react";
 
-interface CardProps {
+export interface Items {
+  id: string;
   title: string;
-  image?: StaticImageData;
-  altText?: string;
-  cost?: string;
-  onButtonClick?: () => void;
+  image: StaticImageData | string; // Adjust to handle string URLs if needed
+  altText: string;
+  cost: string;
   customStyles?: React.CSSProperties;
 }
 
-const Card: React.FC<CardProps> = ({
+const Card: React.FC<Items> = ({
+  id,
   title,
   image,
   altText,
   cost,
-  onButtonClick,
   customStyles,
 }) => {
   return (
     <div className="flex flex-col items-start gap-4" style={customStyles}>
-      {image && (
-        <Image
-          src={image}
-          alt={altText || "Card Image"}
-          className="card-image"
-        />
+      {typeof image === "string" ? (
+        <img src={image} alt={altText} className="card-image" />
+      ) : (
+        <Image src={image} alt={altText} className="card-image" />
       )}
       <div className="card-body flex flex-col gap-1 text-neutral-300">
-        <h3 className="card-title text-neutral-200 font-display md:text-base text-sm  ">{title}</h3>
-        <p className="card-content ">{altText}</p>
+        <Link
+          href={`/item/${id}`}
+          className="card-title text-neutral-200 font-display md:text-base text-sm"
+        >
+          {title}
+        </Link>
+        <p className="card-content">{altText}</p>
         <p className="card-content">{cost}</p>
       </div>
     </div>

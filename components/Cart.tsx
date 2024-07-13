@@ -11,19 +11,23 @@ import Link from "next/link";
 
 const Cart = () => {
   return (
-    <div className=" flex flex-col gap-4">
+    <div className=" flex flex-col gap-4 w-full">
       <div className="container m-auto bg-neutral-100 w-full text-neutral-300 ">
-        <h1 className="text-[3.125rem] text-start py-8 px-8 font-display text-neutral-200">
+        <h1 className="md:text-[3.125rem] text-2xl text-start my-2 md:my-8 px-8 font-display text-neutral-200">
           Cart
         </h1>
-        <div className="w-full bg-neutral-100 h-auto my-16 flex  lg:flex-row flex-col justify-between">
-          <div className=" relative  bg-peach-100 h-[42.625rem] w-[25rem]">
+        <div className="w-full bg-neutral-100 h-auto  lg:my-16 flex lg:gap-40 lg:flex-row flex-col justify-between">
+          <div className=" relative  bg-peach-100 md:h-[42.625rem] md:w-[25rem] h-[32rem] w-[15rem]">
             <div className=" bg-neutral-200 absolute -right-32 top-20">
-              <Image src={image6} alt="" className=" w-[340px] h-[520px]" />
+              <Image
+                src={image6}
+                alt=""
+                className=" md:w-[340px] md:h-[520px] w-[235px] h-[375px]"
+              />
             </div>
           </div>
           <div className="w-full lg:w-1/2 px-8 mt-4">
-            <div className="top flex flex-col">
+            <div className="top flex flex-col gap-4">
               <p className=" text-[1.875rem] font-display hidden lg:flex">
                 Your cart top pick
               </p>
@@ -76,15 +80,19 @@ const Cart = () => {
           </div>
         </div>
       </div>
-      <div className="container m-auto bg-neutral-100 w-full text-neutral-300 ">
-        <div className="w-full bg-neutral-100 h-auto my-16 flex  lg:flex-row flex-col justify-between">
-          <div className=" relative  bg-peach-100  h-[42.625rem] w-[25rem]">
+      <div className="container m-auto bg-neutral-100  w-full text-neutral-300 ">
+        <div className="w-full bg-neutral-100 h-auto my-16 flex lg:gap-40   lg:flex-row flex-col justify-between">
+          <div className=" relative  bg-peach-100   md:h-[42.625rem] md:w-[25rem] h-[32rem] w-[15rem]">
             <div className=" absolute -right-32 top-20">
-              <Image src={image11} alt="" className=" w-[340px] h-[520px]" />
+              <Image
+                src={image11}
+                alt=""
+                className="md:w-[340px] md:h-[520px] w-[235px] h-[375px]"
+              />
             </div>
           </div>
           <div className="w-full md:w-1/2 px-8 mt-4">
-            <div className="top flex flex-col">
+            <div className="top flex flex-col gap-4">
               <p className=" text-[1.875rem] font-display hidden lg:flex">
                 Your cart top pick
               </p>

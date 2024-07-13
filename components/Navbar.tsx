@@ -17,7 +17,7 @@ function classNames(...classes: any[]) {
 const Navbar = () => {
   return (
     <div className="px-8 md:px-16 w-full">
-      <div className="relative flex h-24 items-center justify-between w-full ">
+      <div className="flex h-24 items-center justify-between w-full  ">
         <div className="flex flex-1 items-center justify-between">
           <div className="">
             <div className="flex space-x-4 items-center gap-16">
